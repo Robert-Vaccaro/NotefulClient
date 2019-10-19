@@ -15,8 +15,9 @@ export default class FolderListNote extends Component{
     const folderTitle = newFold.map(folder => folder.title)
     return(
         <ul className="NoteSpecific"> 
+          
+          <h3 className="folder-note-show" key={this.props.Data}>Current Folder: <p></p> {folderTitle}</h3>
           <NavLink className="go-back" to={`/`}>Go back</NavLink>
-          <li className="folder-note-show" key={this.props.Data}>{folderTitle}</li>
         </ul>
       
     )

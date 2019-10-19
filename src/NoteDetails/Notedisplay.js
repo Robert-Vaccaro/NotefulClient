@@ -25,8 +25,8 @@ export default class NoteDisplay extends Component {
     <div className="note-display">
       <FolderListNote Data={noteFolder}/>
       <article className='Note'>
-        <h2>{noteTitle}</h2>
-        {noteContent}
+        <h2 className='note-deets'>{noteTitle}</h2>
+        <p className='note-deets'>{noteContent}</p>
       </article>
     </div>
   )

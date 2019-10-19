@@ -38,7 +38,7 @@ export default class NoteSpecific extends Component{
     return (
             <ul className="note-collection">
                 {this.props.notesdata.map(note=>{
-                    return <li className="NoteBox" key={note.id}><Link className="notelinks" to={`/note/${note.id}`}>{note.title}</Link><p>{note.modified}</p><button onClick={()=> {this.deleteRequest(note.id)}} className="delete-button">Delete</button></li>
+                    return <li className="NoteBox" key={note.id}><Link className="notelinks" to={`/note/${note.id}`}>{note.title}</Link><button onClick={()=> {this.deleteRequest(note.id)}} className="delete-button">Delete</button></li>
                 })}
                 <Link className="AddnoteLink" to={`/AddNote`}>AddNote</Link>
             </ul>
